@@ -12,11 +12,11 @@ class TestComponent extends React.Component {
 
     componentDidMount() {
         this.compKey = shortid.generate();
-        // this.setState({valueToCauseReRender: 're-render-2'})
+        //this.setState({valueToCauseReRender: 're-render-2'})
     }
 
     render() {
-        return <div key={this.compKey}><TestComponent2 /></div>
+        return <div key={this.compKey}>compKey is: {this.compKey}</div>
     }
 }
 
